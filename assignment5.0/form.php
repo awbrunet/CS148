@@ -195,7 +195,7 @@ if (isset($_POST["btnSearch"])) {
     // to display the form.
     if (isset($_POST["btnSearch"])) /*AND empty($errorMsg))*/ 
     { // closing of if marked with: end body submit
-        print "yay";
+        print "$results";
 
         /*if (!$mailed) {
             print "not ";
