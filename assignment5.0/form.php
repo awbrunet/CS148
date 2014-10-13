@@ -320,11 +320,12 @@ if (isset($_POST["btnSubmit"])) {
             </fieldset> <!-- Ends Wrapper -->
         </form>
 
-    <?php if (isset $_POST['btnSearch']){
-        echo("yay");
+    <?php 
+    if (isset $_POST['btnSearch']) AND empty($errorMsg)){
+        print "<p>yay</p>";
     }
     else{
-        echo "boo";
+        print "<p>boo</p>";
     } ?>
 
 </article>
