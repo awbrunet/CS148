@@ -326,16 +326,16 @@ if (isset($_POST["btnSubmit"])) {
 
 </article>
 
-<?php 
+ 
 
-if (isset $_POST['btnSearch']){
+<!-- if (isset $_POST['btnSearch']){
     echo("yay");
 }
 else{
     echo "boo";
 }
+-->
 
-?>
 
  <?php include "footer.php"; ?>
 
