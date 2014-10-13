@@ -150,7 +150,7 @@ if (isset($_POST["btnSearch"])) {
         $query .= 'WHERE fldNumStudents > 100';
 
         $results = $thisDatabase->select($query);
-
+        print "$results";    
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         //
         // SECTION: 2f Create message
@@ -195,7 +195,7 @@ if (isset($_POST["btnSearch"])) {
     // to display the form.
     if (isset($_POST["btnSearch"])) /*AND empty($errorMsg))*/ 
     { // closing of if marked with: end body submit
-        print "$results";
+        
 
         /*if (!$mailed) {
             print "not ";
