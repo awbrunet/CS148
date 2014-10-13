@@ -149,6 +149,8 @@ if (isset($_POST["btnSearch"])) {
         $query .= "FROM tblSections ";
         $query .= 'WHERE fldNumStudents > 100';
 
+        $results = $thisDatabase->select($query);
+
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         //
         // SECTION: 2f Create message
@@ -193,7 +195,7 @@ if (isset($_POST["btnSearch"])) {
     // to display the form.
     if (isset($_POST["btnSearch"])) /*AND empty($errorMsg))*/ 
     { // closing of if marked with: end body submit
-        print "<p>yay</p>";
+        print "yay";
 
         /*if (!$mailed) {
             print "not ";
@@ -212,7 +214,7 @@ if (isset($_POST["btnSearch"])) {
         print $message;*/
     } 
     else 
-    { print "<p>boo</p>";
+    { print "$results";
     
 /*
 
@@ -255,6 +257,7 @@ if (isset($_POST["btnSearch"])) {
 
          */
       }
+
         ?>
     <br>
         <form action="<?php print $phpSelf; ?>"
