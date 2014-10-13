@@ -141,23 +141,11 @@ if (isset($_POST["btnSubmit"])) {
         //
         // This block saves the data to a CSV file.
 
-        $fileExt = ".csv";
-
-        $myFileName = "data/registration";
-
-        $filename = $myFileName . $fileExt;
-
-        if ($debug)
-            print "\n\n<p>filename is " . $filename;
-
-        // now we just open the file for append
-        $file = fopen($filename, 'a');
-
-        // write the forms informations
-        fputcsv($file, $dataRecord);
-
-        // close the file
-        fclose($file);
+        
+        //Build query
+        $query  = "SELECT fldCRN  ";
+        $query .= "FROM tblSections ";
+        $query .= 'WHERE fldNumStudents > 100';
 
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         //
@@ -326,7 +314,7 @@ if (isset($_POST["btnSubmit"])) {
                 </fieldset> <!-- ends wrapper Two -->
                 <br>
                 <fieldset class="buttons">
-                    <input type="submit" id="btnSearch" name="btnSearch" value="Search for classes" tabindex="900" class="button">
+                    <input type="button" id="btnSearch" name="btnSearch" value="Search for classes" tabindex="900" class="button">
                 </fieldset> <!-- ends buttons -->
                 
             </fieldset> <!-- Ends Wrapper -->
@@ -337,6 +325,15 @@ if (isset($_POST["btnSubmit"])) {
     ?>
 
 </article>
+
+<?php 
+
+if (isset $_POST['btnSearch']){
+    echo("yay");
+}
+else{
+    echo "boo";
+}
 
 <?php include "footer.php"; ?>
 
