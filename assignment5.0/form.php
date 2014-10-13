@@ -153,7 +153,7 @@ if (isset($_POST["btnSubmit"])) {
         //
         // build a message to display on the screen in section 3a and to mail
         // to the person filling out the form (section 2g).
-
+/*
         $message = '<h2>Your information.</h2>';
 
         foreach ($_POST as $key => $value) {
@@ -166,7 +166,7 @@ if (isset($_POST["btnSubmit"])) {
                 $message .= $one . " ";
             }
             $message .= " = " . htmlentities($value, ENT_QUOTES, "UTF-8") . "</p>";
-        }
+        }*/
        
     } // end form is valid
     
@@ -189,7 +189,7 @@ if (isset($_POST["btnSubmit"])) {
     // 
     // If its the first time coming to the form or there are errors we are going
     // to display the form.
-    if (isset($_POST["btnSubmit"]) /*AND empty($errorMsg))*/ { // closing of if marked with: end body submit
+    if (isset($_POST["btnSearch"]) /*AND empty($errorMsg))*/ { // closing of if marked with: end body submit
         print "<p>yay</p>";
 
         /*if (!$mailed) {
@@ -208,7 +208,7 @@ if (isset($_POST["btnSubmit"])) {
 
         print $message;*/
     } else {
-    }
+    
 /*
 
         //####################################
