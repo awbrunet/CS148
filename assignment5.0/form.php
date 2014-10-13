@@ -212,7 +212,7 @@ if (isset($_POST["btnSearch"])) {
         print $message;*/
     } 
     else 
-    { print "<p>boo</p>"
+    { print "<p>boo</p>";
     
 /*
 
