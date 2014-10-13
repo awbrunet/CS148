@@ -320,20 +320,18 @@ if (isset($_POST["btnSubmit"])) {
             </fieldset> <!-- Ends Wrapper -->
         </form>
 
-    <?php
-    } // end body submit
-    ?>
+    <?php if (isset $_POST['btnSearch']){
+        echo("yay");
+    }
+    else{
+        echo "boo";
+    } ?>
 
 </article>
 
  
 
-<!-- if (isset $_POST['btnSearch']){
-    echo("yay");
-}
-else{
-    echo "boo";
-}
+<!-- 
 -->
 
 
