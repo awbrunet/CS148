@@ -71,7 +71,7 @@ $mailed=false; // have we mailed the information to the user?
 //
 // SECTION: 2 Process for when the form is submitted
 //
-if (isset($_POST["btnSubmit"])) {
+if (isset($_POST["btnSearch"])) {
 
     //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
     //
