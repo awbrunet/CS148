@@ -1,0 +1,17 @@
+{
+"assignments":[
+{ "folder":"assignment1.0" , "dueDate":1409630400 , "restricted":0}, 
+{ "folder":"assignment2.0" , "dueDate":1410494400 , "restricted":1}, 
+{ "folder":"assignment3.0" , "dueDate":1411099200 , "restricted":1}, 
+{ "folder":"class1" , "dueDate":1411704000 , "restricted":0}, 
+{ "folder":"class2" , "dueDate":1412308800 , "restricted":0}, 
+{ "folder":"assignment4.0" , "dueDate":1412308800 , "restricted":0}, 
+{ "folder":"noSubmit" , "dueDate":1413172800 , "restricted":0}, 
+{ "folder":"assignment5.0" , "dueDate":1413518400 , "restricted":0}, 
+{ "folder":"assignment6.0" , "dueDate":1414728000 , "restricted":0}, 
+{ "folder":"noSubmit" , "dueDate":1416546000 , "restricted":0}, 
+{ "folder":"assignment10" , "dueDate":1417410000 , "restricted":0}, 
+{ "folder":"noSubmit" , "dueDate":1417669200 , "restricted":0}, 
+{ "folder":"noSubmit" , "dueDate":1418360400 , "restricted":0}
+]
+}

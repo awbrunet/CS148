@@ -1,0 +1,1 @@
+SELECT DISTINCT fnkCourseID FROM tblSections GROUP BY fnkCourseID HAVING COUNT(fldSection)>=50;

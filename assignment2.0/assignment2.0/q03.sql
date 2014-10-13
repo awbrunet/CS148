@@ -1,0 +1,1 @@
+SELECT fnkCourseID, fldCRN, fnkTeacherID, fldMaxStudents, fldNumStudents, fldSection, fldType, fldStart, fldStop, fldDays, fldBuilding, fldRoom FROM tblSections WHERE fldStart = "15:00:00" AND fldBuilding = "Kalkin";

@@ -1,0 +1,1 @@
+SELECT DISTINCT fldBuilding, fldNumStudents FROM tblSections WHERE fldDays LIKE "%W%" ORDER BY fldNumStudents DESC

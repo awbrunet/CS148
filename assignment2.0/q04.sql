@@ -1,0 +1,1 @@
+SELECT pmkCourseID, fldCourseNumber, fldCourseName, fldDepartment, fldCredits FROM tblCourses WHERE fldCourseNumber = 148 AND fldDepartment = "CS";
