@@ -13,8 +13,9 @@ if (isset($_GET["debug"])) { // ONLY do this in a classroom environment
     $debug = true;
 }
 
-if ($debug)
+if ($debug){
     print "<p>DEBUG MODE IS ON</p>";
+}
 
 /* ##### Step one
 *
@@ -132,8 +133,9 @@ if (isset($_POST["btnSearch"])) {
     // Process for when the form passes validation (the errorMsg array is empty)
     //
     if (!$errorMsg) {
-        if ($debug)
+        if ($debug){
             print "<p>Form is valid</p>";
+        }
 
         //@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
         //
@@ -189,7 +191,8 @@ if (isset($_POST["btnSearch"])) {
     // 
     // If its the first time coming to the form or there are errors we are going
     // to display the form.
-    if (isset($_POST["btnSearch"])) /*AND empty($errorMsg))*/ { // closing of if marked with: end body submit
+    if (isset($_POST["btnSearch"])) /*AND empty($errorMsg))*/ 
+    { // closing of if marked with: end body submit
         print "<p>yay</p>";
 
         /*if (!$mailed) {
@@ -207,7 +210,9 @@ if (isset($_POST["btnSearch"])) {
         print "<p>Mail Message:</p>";
 
         print $message;*/
-    } else {
+    } 
+    else 
+    {
     
 /*
 
@@ -249,6 +254,7 @@ if (isset($_POST["btnSearch"])) {
           make it stand out that a mistake happened here.
 
          */
+      }
         ?>
     <br>
         <form action="<?php print $phpSelf; ?>"
