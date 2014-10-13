@@ -190,9 +190,9 @@ if (isset($_POST["btnSubmit"])) {
     // If its the first time coming to the form or there are errors we are going
     // to display the form.
     if (isset($_POST["btnSubmit"]) AND empty($errorMsg)) { // closing of if marked with: end body submit
-        print "<h1>Your Request has ";
+        print "<p>yay</p>";
 
-        if (!$mailed) {
+        /*if (!$mailed) {
             print "not ";
         }
 
@@ -206,7 +206,7 @@ if (isset($_POST["btnSubmit"])) {
         print "<p>To: " . $email . "</p>";
         print "<p>Mail Message:</p>";
 
-        print $message;
+        print $message;*/
     } else {
 
 
@@ -320,13 +320,7 @@ if (isset($_POST["btnSubmit"])) {
             </fieldset> <!-- Ends Wrapper -->
         </form>
 
-    <?php 
-    if (isset $_POST['btnSearch']) AND empty($errorMsg)){
-        print "<p>yay</p>";
-    }
-    else{
-        print "<p>boo</p>";
-    } ?>
+    
 
 </article>
 
