@@ -335,7 +335,7 @@ else{
     echo "boo";
 }
 
-<?php include "footer.php"; ?>
+ include "footer.php"; ?>
 
 </body>
 </html>
